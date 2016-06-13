@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D25348BB1D0EF1310048DC07 /* UIHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25348B01D0EF1310048DC07 /* UIHelper.framework */; };
 		D25348C01D0EF1310048DC07 /* UIHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25348BF1D0EF1310048DC07 /* UIHelperTests.swift */; };
+		D25348CB1D0EF2B50048DC07 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25348CA1D0EF2B50048DC07 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 		D25348BA1D0EF1310048DC07 /* UIHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25348BF1D0EF1310048DC07 /* UIHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelperTests.swift; sourceTree = "<group>"; };
 		D25348C11D0EF1320048DC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25348CA1D0EF2B50048DC07 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		D25348CC1D0EF5970048DC07 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 				D25348B21D0EF1310048DC07 /* UIHelper */,
 				D25348BE1D0EF1310048DC07 /* UIHelperTests */,
 				D25348B11D0EF1310048DC07 /* Products */,
+				D25348CC1D0EF5970048DC07 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,7 @@
 		D25348B21D0EF1310048DC07 /* UIHelper */ = {
 			isa = PBXGroup;
 			children = (
+				D25348CA1D0EF2B50048DC07 /* UIHelper.swift */,
 				D25348B51D0EF1310048DC07 /* Info.plist */,
 			);
 			path = UIHelper;
@@ -190,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25348CB1D0EF2B50048DC07 /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +312,7 @@
 		D25348C51D0EF1320048DC07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -316,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.acani.UIHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D25348C61D0EF1320048DC07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
