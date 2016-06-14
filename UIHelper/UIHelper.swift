@@ -9,3 +9,13 @@ extension UIApplication {
         return topmostViewController
     }
 }
+
+extension UIViewController {
+    public func auh_presentViewController(viewControllerToPresent: UIViewController) {
+        presentViewController(viewControllerToPresent, animated: true, completion: nil)
+    }
+
+    public func auh_dismissViewController() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+}
