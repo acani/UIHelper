@@ -10,17 +10,6 @@ extension UIApplication {
     }
 }
 
-extension UITableViewCell {
-    open var auh_isEnabled: Bool {
-        get { return isUserInteractionEnabled }
-        set {
-            isUserInteractionEnabled = newValue
-            textLabel!.isEnabled = newValue
-            detailTextLabel!.isEnabled = newValue
-        }
-    }
-}
-
 extension UIViewController {
     public func auh_dismissViewController() {
         dismiss(animated: true)
