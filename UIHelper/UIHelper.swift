@@ -11,7 +11,7 @@ extension UIApplication {
 }
 
 extension UIViewController {
-    public func auh_dismissViewController() {
+    @objc public func auh_dismissViewController() {
         dismiss(animated: true)
     }
 }
