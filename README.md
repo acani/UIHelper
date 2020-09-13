@@ -10,18 +10,6 @@ Usage:
 let topmostViewController = UIApplication.auh_topmostViewController
 ```
 
-```swift
-class MyCustomViewController: UIViewController {
-  init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    let cancelBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(UIViewController.auh_dismissViewController))
-    navigationItem.leftBarButtonItem = cancelBarButtonItem
-  }
-
-  // ...
-}
-```
-
 Released under the [Unlicense][2].
 
 

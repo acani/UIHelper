@@ -7,27 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D25348BB1D0EF1310048DC07 /* UIHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25348B01D0EF1310048DC07 /* UIHelper.framework */; };
-		D25348C01D0EF1310048DC07 /* UIHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25348BF1D0EF1310048DC07 /* UIHelperTests.swift */; };
 		D25348CB1D0EF2B50048DC07 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25348CA1D0EF2B50048DC07 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D25348BC1D0EF1310048DC07 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D25348A71D0EF1310048DC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D25348AF1D0EF1310048DC07;
-			remoteInfo = UIHelper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D25348B01D0EF1310048DC07 /* UIHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25348B51D0EF1310048DC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D25348BA1D0EF1310048DC07 /* UIHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D25348BF1D0EF1310048DC07 /* UIHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelperTests.swift; sourceTree = "<group>"; };
-		D25348C11D0EF1320048DC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25348CA1D0EF2B50048DC07 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		D25348CC1D0EF5970048DC07 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,14 +25,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D25348B71D0EF1310048DC07 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D25348BB1D0EF1310048DC07 /* UIHelper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +32,6 @@
 			isa = PBXGroup;
 			children = (
 				D25348B21D0EF1310048DC07 /* UIHelper */,
-				D25348BE1D0EF1310048DC07 /* UIHelperTests */,
 				D25348B11D0EF1310048DC07 /* Products */,
 				D25348CC1D0EF5970048DC07 /* README.md */,
 			);
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				D25348B01D0EF1310048DC07 /* UIHelper.framework */,
-				D25348BA1D0EF1310048DC07 /* UIHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,15 +52,6 @@
 				D25348B51D0EF1310048DC07 /* Info.plist */,
 			);
 			path = UIHelper;
-			sourceTree = "<group>";
-		};
-		D25348BE1D0EF1310048DC07 /* UIHelperTests */ = {
-			isa = PBXGroup;
-			children = (
-				D25348BF1D0EF1310048DC07 /* UIHelperTests.swift */,
-				D25348C11D0EF1320048DC07 /* Info.plist */,
-			);
-			path = UIHelperTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,24 +85,6 @@
 			productReference = D25348B01D0EF1310048DC07 /* UIHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D25348B91D0EF1310048DC07 /* UIHelperTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D25348C71D0EF1320048DC07 /* Build configuration list for PBXNativeTarget "UIHelperTests" */;
-			buildPhases = (
-				D25348B61D0EF1310048DC07 /* Sources */,
-				D25348B71D0EF1310048DC07 /* Frameworks */,
-				D25348B81D0EF1310048DC07 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D25348BD1D0EF1310048DC07 /* PBXTargetDependency */,
-			);
-			name = UIHelperTests;
-			productName = UIHelperTests;
-			productReference = D25348BA1D0EF1310048DC07 /* UIHelperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,10 +98,6 @@
 					D25348AF1D0EF1310048DC07 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1020;
-					};
-					D25348B91D0EF1310048DC07 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -171,20 +115,12 @@
 			projectRoot = "";
 			targets = (
 				D25348AF1D0EF1310048DC07 /* UIHelper */,
-				D25348B91D0EF1310048DC07 /* UIHelperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D25348AE1D0EF1310048DC07 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D25348B81D0EF1310048DC07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,23 +138,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D25348B61D0EF1310048DC07 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D25348C01D0EF1310048DC07 /* UIHelperTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D25348BD1D0EF1310048DC07 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D25348AF1D0EF1310048DC07 /* UIHelper */;
-			targetProxy = D25348BC1D0EF1310048DC07 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D25348C21D0EF1320048DC07 /* Debug */ = {
@@ -269,7 +189,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -322,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -372,28 +292,6 @@
 			};
 			name = Release;
 		};
-		D25348C81D0EF1320048DC07 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = UIHelperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acani.UIHelperTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		D25348C91D0EF1320048DC07 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = UIHelperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acani.UIHelperTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,15 +309,6 @@
 			buildConfigurations = (
 				D25348C51D0EF1320048DC07 /* Debug */,
 				D25348C61D0EF1320048DC07 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D25348C71D0EF1320048DC07 /* Build configuration list for PBXNativeTarget "UIHelperTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D25348C81D0EF1320048DC07 /* Debug */,
-				D25348C91D0EF1320048DC07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
